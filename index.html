@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Cavan Schutte" />
+    <meta name="description" content="Cavan Schutte">
+    <link rel="icon" type="image/png" href="images/favi.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Document title -->
+    <title>Cavan Schutte</title>
+
+    <!-- Stylesheets & Fonts -->
+    <link href="css/plugins.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="plugins/slick-1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="plugins/slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
+    <script src="plugins/jquery3.6.0.min.js"></script>
+
+</head>
+
+
+
+
+<!-- GLOBAL STYLES -->
+<style media="screen">
+    .grid li a img {
+        /* width: 100%; */
+        max-width: 12rem;
+        max-height: 3rem;
+        object-fit: contain;
+        /* filter: grayscale(1); */
+    }
+
+    .skill-name {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .text-white {
+        color: white;
+    }
+
+    .heading-text.heading-section h2:before {
+        content: "";
+        position: absolute;
+        height: 0px;
+        width: 0px;
+        background-color: white;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+    }
+
+    .max_height {
+        min-height: 100% !important;
+        height: 100% !important;
+    }
+
+    .curtain {
+        background-image: url("images/cgi/file 2560x1600_048890.png");
+        background-size: contain;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        color: white;
+    }
+
+    .selfie {}
+
+    @media screen and (max-width: 995px),
+    screen and (max-height: 700px) {
+        .selfie {
+            display: none;
+        }
+    }
+
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    .slick-dots{
+        bottom: -100px
+    }
+
+    .slick-slide img {
+        width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: white;
+    }
+
+    .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: .1;
+    }
+
+    .slick-active {
+        opacity: 1;
+        color: blue;
+    }
+
+    .slick-current {
+        opacity: 1;
+    }
+</style>
+
+
+
+<body style="zoom: 0.9;">
+
+
+
+
+    <!-- Body Inner -->
+    <div class="body-inner">
+
+
+
+
+
+
+        <!-- LANDING -->
+        <section class="fullscreen background-image" style="background-image:url();">
+
+
+            <div class="container">
+
+                <div class="container-fullscreen">
+                    <div class="text-middle text-right">
+                        <h3 data-animate="fadeInDown" data-animate-delay="0">Hi, I'm</h3>
+                        <h1 class="text-lg" data-animate="fadeInDown" data-animate-delay="500">Cavan Schutte</h1>
+                        <h4 data-animate="fadeInDown" data-animate-delay="1000">Full-Stack Web Engineer</h4>
+                        <div class="scrolldown-animation" id="scroll-down">
+                            <a class="scroll-to" href="#about">
+                                <img src="images/scrolldown-dark.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="p-t-150 background-image my_backgound" id="about">
+            <!-- <section class="p-t-150 background-image" style="background-image:url(static/theme/homepages/design-studio/images/parallax/1.jpg);"> -->
+
+            <!-- <style media="screen">
+          .my_backgound {
+            background-image: url(/static/images/selfie.jpeg);
+            /* height: 20rem; */
+            background-size: contain;
+            background-position: right;
+            background-origin: content-box;
+            right: 2.5rem;
+            border-radius: 100rem;
+          }
+        </style> -->
+            <!-- <section class="p-t-150 background-image" style="background-image:url(static/theme/homepages/design-studio/images/parallax/1.jpg);"> -->
+            <style media="screen">
+                /* SHOW NORMALLY - HIDE BOTTOM */
+                @media all and (min-width: 1100px) {
+                    .background-image {
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        /* border-radius: 30rem; */
+                        background-image: url(images/selfie.jpg);
+                    }
+
+                    .bottom_image {
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url('');
+                    }
+                }
+
+                /* HIDE NORMALLY - SHOW BOTTOM */
+                @media all and (max-width: 1099px) {
+                    .background-image {
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url('');
+                    }
+
+                    .bottom_image {
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 100%;
+                        height: 40rem;
+                        background-image: url(images/selfies/avatar_2.png);
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+
+                    .container,
+                    .container-lg,
+                    .container-md,
+                    .container-sm,
+                    .container-xl {
+                        max-width: 1240px;
+                    }
+                }
+            </style>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-7" data-animate="fadeIn">
+                        <h2 class="text-medium">Who is Cavan?</h2>
+                        <p>
+                            I am a professional Full Stack Web engineer. My first line of code was in my early teenage
+                            years
+                            and continued through till this day. My speciality lies in backend web application
+                            development,
+                            however I remain open minded to my responsibilities during task delegation.
+                            <br><br>
+                            Software engineering has been my interest since I was a boy and I first thought of making a
+                            game. What started with a Unity3D tutorial led to LUA plugins for WOW to professional mobile
+                            development and now a full-stack web engineer.
+                            <br><br>
+                            If I was asked who is my role model, it would be the backend engineer <a
+                                href="https://www.youtube.com/c/HusseinNasser-software-engineering">Hussein Nasser
+                                (YouTube)</a> , for
+                            his ability to remain tech agnostic and forever learning in this industry is inspirational
+                            and a
+                            characteristic I attempt to achieve every day.
+                        </p>
+                        <a href="#contact_us" class="btn btn-outline btn-dark"><span>Get In Touch</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="bottom_image"></div>
+            </div>
+
+        </section>
+
+
+
+        <!-- SOCIALS -->
+        <section id="welcome" class="p-b-0">
+            <div class="heading-text heading-section text-center">
+                <h2 class="font-weight-100 m-b-0">Socials</h2>
+                <p>Please click any of the below boxes to view my socials</p>
+            </div>
+
+            <ul class="grid grid-3-columns">
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/cavanschutte/"><img
+                            src="images/icons/linkedin.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Linkedin</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com/schuttecavan"><img
+                            src="images/icons/twitter.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Twitter</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/itsCaveMan"><img
+                            src="images/icons/github.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Github</p>
+                </li>
+            </ul>
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a target="_blank" href="https://leetcode.com/itsCaveMan/"><img
+                            src="images/icons/leetcode.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Leetcode</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.codewars.com/users/cavecavan"><img
+                            src="images/icons/codewars.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">CodeWars</p>
+                </li>
+            </ul>
+            <ul class="grid grid-3-columns">
+                <li></li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCsjJvN5E2LRzSbCqGHIfmxA/videos"><img
+                            src="images/icons/youtube.webp" alt=""></a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ldGuLEv8mMc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </li>
+                <li></li>
+            </ul>
+
+        </section>
+
+
+        <h1 class="text-center font-weight-100" style="margin-top: 25rem">PORTFOLIO</h1>
+
+
+        <!-- WEBSITES -->
+        <section id="welcome" class="p-b-0">
+            <div class="heading-text heading-section text-center">
+
+                <h2 class="font-weight-400 m-b-0">PROJECTS I HELPED ENGINEER:</h2>
+                <p><em>some disclosable</em> projects, working as a Full-Stack developer/engineer (2018-Present) </p>
+                <!-- <h2 class="font-weight-400">Few things are <span class="text-rotator font-weight-700" data-animation="flash" data-speed="3000">designed well.,designed simply.,designed better.</span></h2> -->
+            </div>
+
+            <!-- RESULTSBI -->
+            <div class="container m-b-200">
+                <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                    data-animate="fadeInUp">
+                    <h2 class="mb-0 m-t-80"><a href="https://get.resultsbi.com" target="_blank">ResultsBi.com</a></h2>
+                    <!-- <span class="lead">Create amam ipsum dolor sit amet, Beautiful nature, and rare feathers!.</span> -->
+                </div>
+                <div class="row animated fadeInUp visible" data-animate="fadeInUp">
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="images/websites/resultsbi.png" alt="image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- PEIMS.COM -->
+            <div class="container m-b-200">
+                <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                    data-animate="fadeInUp">
+                    <h2 class="mb-0 m-t-80"><a href="https://www.schoolmanagement.one" target="_blank">PEIMS.co</a></h2>
+                    <!-- <span class="lead">Create amam ipsum dolor sit amet, Beautiful nature, and rare feathers!.</span> -->
+                </div>
+                <div class="row animated fadeInUp visible" data-animate="fadeInUp">
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="images/websites/peims-co.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- WOOSONG SCHEDULER.COM -->
+            <div class="container m-b-200">
+                <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                    data-animate="fadeInUp">
+                    <h2 class="mb-0 m-t-80"><a href="https://itscaveman.github.io/wsu-scheduler/"
+                            target="_blank">University Scheduler</a>
+                    </h2>
+                </div>
+                <div class="row animated fadeInUp visible" data-animate="fadeInUp">
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="images/websites/woosong_schedular.png" alt="image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SABLEAPPS.COM -->
+            <div class="container m-b-200">
+                <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                    data-animate="fadeInUp">
+                    <h2 class="mb-0 m-t-80"><a href="#">SableApps.com</a></h2>
+                    <!-- <span class="lead">Create amam ipsum dolor sit amet, Beautiful nature, and rare feathers!.</span> -->
+                </div>
+                <div class="row animated fadeInUp visible" data-animate="fadeInUp">
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="images/websites/sableapps-com.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEVELOPEDANALYSIS -->
+            <div class="container m-b-200">
+                <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                    data-animate="fadeInUp">
+                    <h3 class="mb-0 m-t-80"><a href="http://www.developedanalysis.com/"
+                            target="_blank">DevelopedAnalysis.com</a></h3>
+                </div>
+                <div class="row animated fadeInUp visible" data-animate="fadeInUp">
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="images/websites/developedanalysis.png" alt="image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIMA -->
+            <div class="container m-b-200">
+                <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                    data-animate="fadeInUp">
+                    <h2 class="mb-0 m-t-80"><a href="https://www.simafilms.space/" target="_blank">SimaFilms.space</a>
+                    </h2>
+                </div>
+                <div class="row animated fadeInUp visible" data-animate="fadeInUp">
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="images/websites/sima.png" alt="image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Clinic -->
+            <div class="container m-b-200">
+                <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                    data-animate="fadeInUp">
+                    <h2 class="mb-0 m-t-80">My Clinic</h2>
+                    <!-- <span class="lead">Create amam ipsum dolor sit amet, Beautiful nature, and rare feathers!.</span> -->
+                </div>
+                <div class="row animated fadeInUp visible" data-animate="fadeInUp">
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="images/websites/myclinic.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- QTS -->
+            <div class="container m-b-200">
+                <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                    data-animate="fadeInUp">
+                    <h2 class="mb-0 m-t-80">TBoard</h2>
+                    <!-- <span class="lead">Create amam ipsum dolor sit amet, Beautiful nature, and rare feathers!.</span> -->
+                </div>
+                <div class="row animated fadeInUp visible" data-animate="fadeInUp">
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="images/websites/tboard.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GLOBAL COLLABORATION -->
+        <section>
+
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col">
+
+                        <div class="heading-text heading-section text-center m-t-50">
+                            <h2>My Global Collaboration</h2>
+                            <span class="lead">I have proudly worked with teams in 4 of 5 continents</span>
+                        </div>
+
+                        <img src="images/work_history_map/work_history_map.png" alt=""
+                            style="width: 100%;">
+                        <p class="skill-name text-center">Netherlands, USA, South Korea, New Zealand and South Africa
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- PROGRAMMING LANGUAGES -->
+        <section class="section">
+
+
+            <div class="heading-text heading-section text-center">
+                <h2>PROGRAMMING LANGUAGES</h2>
+                <span class="lead">My languages at the level of Expert</span>
+            </div>
+
+            <ul class="grid grid-3-columns">
+                <li>
+                    <a href="#"><img src="images/icons/csharp.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">C#</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/python.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Python</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/sql.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">SQL</p>
+                </li>
+            </ul>
+
+            <ul class="grid grid-3-columns">
+                <li>
+                    <a href="#"><img src="images/icons/html.svg" alt="">
+                    </a>
+                    <p class="skill-name text-center">HTML</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/css.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">CSS</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/js.svg" alt="">
+                    </a>
+                    <p class="skill-name text-center">JS</p>
+                </li>
+            </ul>
+
+            <div class="heading-text heading-section text-center">
+                <span class="lead">Languages I obtain a notable level of skill in</span>
+            </div>
+
+            <ul class="grid grid-4-columns">
+                <li>
+                    <a href="#"><img src="images/icons/java.webp" alt="">
+                    </a>
+                    <p class="skill-name text-center">Java</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/dart.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Dart</p>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/icons/swift.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Swift</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/obj-c.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">[Objective-C]</p>
+                </li>
+
+            </ul>
+
+            <ul class="grid grid-3-columns">
+                <li>
+                    <a href="#"><img src="images/icons/typescript.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Typescript</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/LUA.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">LUA</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/PHP.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">PHP</p>
+                </li>
+
+            </ul>
+
+
+        </section>
+
+        <!-- FRAMEWORKS -->
+        <section class="section">
+
+
+            <div class="heading-text heading-section text-center m-t-50">
+                <h2>WEB/APP FRAMEWORKS</h2>
+                <span class="lead">These pieces of software i have used extensively:</span>
+            </div>
+
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a href="#"><img src="images/icons/django.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Django</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/flask.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Flask</p>
+                </li>
+            </ul>
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a href="#"><img src="images/icons/angular.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">AngularJS</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/jquery.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Jquery</p>
+                </li>
+            </ul>
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a href="#"><img src="images/icons/unity.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Unity3D</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/flutter.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Flutter</p>
+                </li>
+            </ul>
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a href="#"><img src="images/icons/aspnet.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">ASP.NET</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/iis.jpg" alt="">
+                    </a>
+                    <p class="skill-name text-center">IIS</p>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- DATABASES -->
+        <section class="section">
+
+
+            <div class="heading-text heading-section text-center m-t-50">
+                <h2>DATABASES</h2>
+                <span class="lead">My experience in database technologies are:</span>
+            </div>
+
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a href="#"><img src="images/icons/postgreSQL.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">PostgresSQL</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/pgadmin.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">PG Admin</p>
+                </li>
+            </ul>
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a href="#"><img src="images/icons/mssqlserver.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">MS SQL Server</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/SSMS.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">SSMS</p>
+                </li>
+            </ul>
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a href="#"><img src="images/icons/SQLite3.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">SQLite3</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/dbbrowser.jpg" alt="">
+                    </a>
+                    <p class="skill-name text-center">DB Browser</p>
+                </li>
+            </ul>
+
+
+        </section>
+
+        <!-- CLOUD SERVICES -->
+        <section class="section">
+
+            <div class="heading-text heading-section text-center m-t-50">
+                <h2>CLOUD</h2>
+                <span class="lead">Cloud providers I obtain notable skill in</span>
+            </div>
+
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a href="#"><img src="images/icons/AWS2.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">AWS</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/azure2.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Azure</p>
+                </li>
+            </ul>
+            <ul class="grid grid-1-columns">
+                <li>
+                    <a href="#"><img style="max-height: 15rem; max-width: 15rem;"
+                            src="images/icons/AWS_CCP_badge.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">AWS: CCP</p>
+                    <p class="skill-name text-center"><a
+                            href="https://www.credly.com/badges/454e5e87-2c78-4ba9-9112-72db5274e065/public_url">View in
+                            Credly.com</a>
+                    </p>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- Development Environment -->
+        <section class="section">
+
+
+            <div class="heading-text heading-section text-center m-t-50">
+                <h2>ENVIRONMENTS</h2>
+                <span class="lead">A typical day as a engineer for me takes place inside these technologies</span>
+            </div>
+
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a href="#"><img src="images/icons/windows.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Windows</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/macos.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">MacOS</p>
+                </li>
+            </ul>
+            <ul class="grid grid-4-columns">
+                <li>
+                    <a href="#"><img src="images/icons/vs_code.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">VS Code</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/pycharm.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Pycharm</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/atom.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Atom</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/vs.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">VS</p>
+                </li>
+            </ul>
+
+            <div class="heading-text heading-section text-center">
+                <span class="lead">VCS</span>
+            </div>
+
+            <ul class="grid grid-3-columns">
+                <li>
+                    <a href="#"><img src="images/icons/git.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Git</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/bitbucket.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Bitbucket</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/github.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Github</p>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- Task Management -->
+        <section class="section">
+
+
+            <div class="heading-text heading-section text-center m-t-50">
+                <h2>COLLABORATION</h2>
+                <span class="lead">The tools that enable me collaborate effectively with team mates and colleges
+                    everyday</span>
+            </div>
+
+            <ul class="grid grid-2-columns">
+                <li>
+                    <a href="#"><img src="images/icons/jirasoftware2.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Jira</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/confluence.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Confluence</p>
+                </li>
+            </ul>
+            <ul class="grid grid-4-columns">
+                <li>
+                    <a href="#"><img src="images/icons/monday.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Monday.com</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/trello.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">Trello</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/zoom2.jpg" alt="">
+                    </a>
+                    <p class="skill-name text-center">Zoom</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/msteams.png" alt="">
+                    </a>
+                    <p class="skill-name text-center">MS Teams</p>
+                </li>
+            </ul>
+
+
+        </section>
+
+        <!-- Responsibilties -->
+        <section class="section">
+
+
+            <div class="heading-text heading-section text-center m-t-50">
+                <h2>ROLES AND RESPONSIBILITIES</h2>
+                <span class="lead">Responsibilities and roles I have fulfilled</span>
+            </div>
+
+            <ul class="grid grid-2-columns">
+                <li>
+                    <p class="skill-name text-center">Product engineering</p>
+                </li>
+                <li>
+                    <p class="skill-name text-center">System design</p>
+                </li>
+            </ul>
+            <ul class="grid grid-4-columns">
+                <li>
+                    <p class="skill-name text-center">Team Lead</p>
+                </li>
+                <li>
+                    <p class="skill-name text-center">RESTful API Architecture</p>
+                </li>
+                <li>
+                    <p class="skill-name text-center">Code quality</p>
+                </li>
+                <li>
+                    <p class="skill-name text-center">QA</p>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- SOFT SKILLS -->
+        <section class="section">
+
+            <div class="heading-text heading-section text-center m-t-50">
+                <h2>SOFT SKILLS</h2>
+                <span class="lead">Professional skills as a employee and as a college</span>
+            </div>
+
+            <ul class="grid grid-4-columns">
+                <li>
+                    <p class="skill-name text-center">Friendly Natured</p>
+                </li>
+                <li>
+                    <p class="skill-name text-center">Team Player</p>
+                </li>
+                <li>
+                    <p class="skill-name text-center">Solution focused</p>
+                </li>
+                <li>
+                    <p class="skill-name text-center">Critical Thinker</p>
+                </li>
+            </ul>
+            <ul class="grid grid-4-columns">
+                <li>
+                    <p class="skill-name text-center">Communication</p>
+                </li>
+                <li>
+                    <p class="skill-name text-center">Collaborative</p>
+                </li>
+                <li>
+                    <p class="skill-name text-center">Agile</p>
+                </li>
+                <li>
+                    <p class="skill-name text-center">Self Management</p>
+                </li>
+            </ul>
+
+
+        </section>
+
+
+        <!-- UNITY3D -->
+        <section class="section">
+
+            <div class="">
+                <div class="container">
+                    <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                        data-animate="fadeInUp">
+                        <h2 class="mb-0 m-t-50 m-b-30" style="color: black; ">Game Development</h2>
+                        <span class="lead">My years of game development set a firm developer foundation for the rest of
+                            my career</span>
+
+                    </div>
+
+
+                    <div class="row animated fadeInUp visible" data-animate="fadeInUp">
+                        <div class="col"></div>
+                        <div class="col-a">
+                            <img class="img-fluid" src="images/games/cover_game.jpg" alt="image"
+                                style="">
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- GAMES -->
+        <section class="section">
+
+            <div class="container">
+                <h2 class="font-weight-400 m-b-0 text-center">MOBILE GAME DEVELOPMENT (2013-2016)</h2>
+            </div>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-6 col-lg-2 mb-5 mt-5">
+                        <!-- arrow_hit-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_gif.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_3.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_4.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_5.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_6.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_7.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_8.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_9.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_10.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_11.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_12.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_13.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/arrow_hit/arrow_hit_14.jpg">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-2 mb-5 mt-5">
+
+                        <!-- bouncy_rocket-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/games/bouncy_rocket/bouncy_rocket_gif.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/bouncy_rocket/bouncy_rocket_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/bouncy_rocket/bouncy_rocket_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/bouncy_rocket/bouncy_rocket_3.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/bouncy_rocket/bouncy_rocket_4.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/bouncy_rocket/bouncy_rocket_5.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/bouncy_rocket/bouncy_rocket_6.jpg">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-2 mb-5 mt-5">
+                        <!-- bubble_drop-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/games/bubble_drop/bubble_drop_5.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/bubble_drop/bubble_drop_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/bubble_drop/bubble_drop_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/bubble_drop/bubble_drop_3.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/bubble_drop/bubble_drop_4.jpg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-2 mb-5 mt-5">
+                        <!-- falling-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/games/falling/falling_gif.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/falling/falling_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/falling/falling_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/falling/falling_3.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/falling/falling_4.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/falling/falling_5.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/falling/falling_6.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/falling/falling_7.jpg">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-2 mb-5 mt-5">
+
+                        <!-- flip_side-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/games/flip_side/flip_side_gif.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/flip_side/flip_side_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/flip_side/flip_side_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/flip_side/flip_side_3.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/flip_side/flip_side_4.jpg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-2 mb-5 mt-5">
+
+                        <!-- game_simple-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/games/game_simple/game_simple_gif.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/game_simple/game_simple_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/game_simple/game_simple_2.jpg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-2 mb-5 mt-5">
+
+                        <!-- r_and_r-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/games/r_and_r/r_and_r_gif.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/r_and_r/r_and_r_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/r_and_r/r_and_r_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/r_and_r/r_and_r_3.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/r_and_r/r_and_r_4.jpg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-2 mb-5 mt-5">
+                        <!-- round_about-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/games/round_about/round_about_gif.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/round_about/round_about_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/round_about/round_about_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/round_about/round_about_3.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/round_about/round_about_4.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/round_about/round_about_5.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/round_about/round_about_6.jpg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-2 mb-5 mt-5">
+                        <!-- wobbly_arena-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_gif.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_3.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_4.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_5.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_6.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_7.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_8.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_9.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_10.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_11.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/games/wobbly_arena/wobbly_arena_12.jpg">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- APPS -->
+        <section class="section">
+
+            <div class="container">
+                <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                    data-animate="fadeInUp">
+                    <h2 class="mb-0 m-t-50 m-b-30" style="color: black; ">FLUTTER</h2>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <h2 class="font-weight-400 m-b-0 text-center">MOBILE APP DEVELOPMENT (2016-2017)</h2>
+            </div>
+
+            <div class="container">
+
+                <div class="row mt-5">
+                    <!-- TOP 100 FILMS-->
+                    <div class="col-sm-6 col-lg-2">
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/apps/top_100_films/top_100_films_gif_1.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/top_100_films/top_100_films_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/top_100_films/top_100_films_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/top_100_films/top_100_films_3.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/top_100_films/top_100_films_4.jpg">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-2">
+                        <!-- SEON TIME -->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/apps/seon_time/seon_time_gif.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/seon_time/seon_time_5.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/seon_time/seon_time_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/seon_time/seon_time_4.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/seon_time/seon_time_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/seon_time/seon_time_3.jpg">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <!-- THE BREATHING APP-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/apps/the_breathing_app/breathing_app_gif.gif">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/the_breathing_app/breathing_app_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/the_breathing_app/breathing_app_2.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/the_breathing_app/breathing_app_3.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/the_breathing_app/breathing_app_4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <!-- YEOYU 2D-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/apps/yeoyu_2d/yeoyu2d_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/yeoyu_2d/yeoyu2d_2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <!-- SEON TIME PROTO-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img data-lazy="images/apps/seon_time/seon_time_proto_1.jpg">
+                            </div>
+                            <div>
+                                <img data-lazy="images/apps/seon_time/seon_time_proto_2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <!-- TOP 100 PROGRAMMING LANGUAGES-->
+                        <div class="lazy slider shadow">
+                            <div>
+                                <img
+                                    data-lazy="images/apps/top_100_programming_languages/top_100_programming_languages_gif.gif">
+                            </div>
+                            <div>
+                                <img
+                                    data-lazy="images/apps/top_100_programming_languages/top_100_programming_languages_1.jpg">
+                            </div>
+                            <div>
+                                <img
+                                    data-lazy="images/apps/top_100_programming_languages/top_100_programming_languages_2.jpg">
+                            </div>
+                            <div>
+                                <img
+                                    data-lazy="images/apps/top_100_programming_languages/top_100_programming_languages_3.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CGI -->
+        <section id="welcome" class="p-b-0">
+
+            <div class="curtain">
+                <div class="container">
+                    <div class="heading-text heading-section text-center mb-0 animated fadeInUp visible"
+                        data-animate="fadeInUp">
+                        <h2 class="mb-0 m-t-50 m-b-30" style="color: white; filter: drop-shadow(4px 4px 1px black);">3D
+                            RENDERING
+                            (2010-2020)</h2>
+                        <p class="lead text-white">CGI is a small hobby of mine</p>
+                        <p class="lead text-white">This collage is made up of all my own works, created in Autodesk Maya
+                            &
+                            Blender</p>
+                    </div>
+                    <div class="row animated fadeInUp visible" data-animate="fadeInUp">
+                        <div class="col-lg-12">
+                            <img class="img-fluid" src="images/cgi/cgi_panel.jpg" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <!-- end: Body Inner -->
+
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+
+    <!--Plugins-->
+    <script src="js/plugins.js"></script>
+
+
+    <!--Template functions-->
+    <script src="js/functions.js"></script>
+
+    <script src="plugins/slick-1.8.1/slick/slick.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".lazy").slick({
+                lazyLoad: 'ondemand', // ondemand progressive anticipated
+                infinite: true,
+                dots: true,
+                centerMode: true,
+                slidesToShow: 1,
+                // {#slidesToScroll: 3,#}
+                // {#autoplay: true,#}
+                // {#autoplaySpeed: 4000,#}
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+      </script>
+
+</body>
+
+</html>
